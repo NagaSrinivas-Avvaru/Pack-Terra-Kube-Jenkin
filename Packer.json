@@ -2,17 +2,17 @@
   "variables": {
     "git_commit": "",
     "git_branch": "",
-    "account_file": "",
-    "project_id": "null"
+    "access_key": "AKIAJCFVGO2ZRAQSIIVA",
+    "secret_key": "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"
+   
   },
   "builders": [
     {
-      "type": "googlecompute",
-      "account_file": "{{user `account_file`}}",
-      "project_id": "{{user `project_id`}}",
-      "source_image": "ubuntu-1404-trusty-v20151113",
-      "zone": "us-central1-a",
-      "image_name": "redmine-{{timestamp}}-{{user `git_branch`}}-{{user `git_commit`}}"
+      "type": "amazon-ebs",
+      "region": "us-west-2",
+      "instance_type": "t2.micro",
+      "source_ami": "ami-4e79ed36",
+      "ami_name": "Testing-{{timestamp}}"
     }
   ],
   "provisioners": [

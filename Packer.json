@@ -12,7 +12,8 @@
       "region": "us-west-2",
       "instance_type": "t2.micro",
       "source_ami": "ami-4e79ed36",
-      "ami_name": "Testing-{{timestamp}}"
+      "ami_name": "Testing-{{timestamp}}",
+      "ssh_username": "ubuntu"
     }
   ],
   "provisioners": [

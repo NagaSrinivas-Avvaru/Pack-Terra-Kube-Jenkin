@@ -2,10 +2,7 @@
   "variables": {
     "git_commit": "",
     "git_branch": "",
-    "access_key": "AKIAJCFVGO2ZRAQSIIVA",
-    "secret_key": "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"
-   
-  },
+      },
   "builders": [
     {
       "type": "amazon-ebs",
